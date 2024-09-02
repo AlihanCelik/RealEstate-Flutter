@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'components/bottom_buttons.dart';
 import 'components/categories.dart';
 import 'components/custom_app_bar.dart';
 import 'components/houses.dart';
@@ -14,9 +15,11 @@ class HomeScreen extends StatelessWidget{
             children: [
               CustomAppBar(),
               Categories(),
-              Houses()
+              Houses(),
+
             ],
-          )
+          ),
+          BottomButtons()
         ],
       ),
     );
