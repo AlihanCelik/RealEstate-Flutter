@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/model/screens/details/components/carousel_images.dart';
+import 'package:my_app/model/screens/details/components/house_details.dart';
 
 import '../../house.dart';
 import '../details/components/custom_app_bar.dart';
@@ -24,7 +25,8 @@ class _DetailsScreenState extends State<DetailsScreen>{
               CarouselImages(widget.house.moreImagesUrl),
               CustomAppBar(),
             ],
-          )
+          ),
+          HouseDetails(widget.house)
 
         ],
       ),
